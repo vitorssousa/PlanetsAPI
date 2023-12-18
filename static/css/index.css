@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:display=swap');
+
+body,html {
+    font-family: 'Ubuntu', sans-serif;
+    background:#252B48;
+    color:#fff;
+}
+
+nav {
+    border-bottom: 1px solid #445069;
+}
+
+.container img{
+    width: 100px;
+}
+
+.container {
+    display: flex;
+    max-width: 300px;
+    max-height: 200px;
+    overflow: hidden;
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for('static', filename='/css/planet.css') }}>
+    <title>{{info['planet_name']}}</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href={{url_for('index')}}><h1>Planets</h1></a>
+            <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='/images/backbutton.svg')}}" alt="back"></a>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="info-container">
+            <div class="img">
+                <img src={{ info['planet_image'] }}>
+            </div>
+            <div class="info">
+                <h2>{{info['planet_name']}}</h2>
+                <p><strong>Description</strong>: {{info['planet_desc']}}</p>
+                <p><strong>Volume</strong>: {{info['planet_volume']}}</p>
+                <p><strong>Mass</strong>: {{info['planet_mass']}}</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href={{url_for('static', filename='/css/planet.css')}}>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href={{url_for('index')}}><h1>Planets</h1></a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Click on the planet</h1>
+        <div class="container">
+            <div class="firstrow">
+                <a href={{url_for('planets', parameter=1)}}><img src="{{url_for('static', filename='/images/mercury.svg')}}" alt="mercury"></a>
+                <a href={{url_for('planets', parameter=2)}}><img src="{{url_for('static', filename='/images/venus.svg')}}" alt="venus"></a>
+                <a href={{url_for('planets', parameter=3)}}><img src="{{url_for('static', filename='/images/earth.svg')}}" alt="earth"></a>
+                <a href={{url_for('planets', parameter=4)}}><img src="{{url_for('static', filename='/images/mars.svg')}}" alt="mars"></a>
+            </div>
+            <div class="secondrow">
+                <a href={{url_for('planets', parameter=5)}}><img src="{{url_for('static', filename='/images/jupiter.svg')}}" alt="jupiter"></a>
+                <a href={{url_for('planets', parameter=6)}}><img src="{{url_for('static', filename='/images/saturn.svg')}}" alt="saturn"></a>
+                <a href={{url_for('planets', parameter=7)}}><img src="{{url_for('static', filename='/images/uranus.svg')}}" alt="uranus"></a>
+                <a href={{url_for('planets', parameter=8)}}><img src="{{url_for('static', filename='/images/neptune.svg')}}" alt="neptune"></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
