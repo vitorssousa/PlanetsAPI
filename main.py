@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import requests
 
 headers = {
-	"X-RapidAPI-Key": "c1c5c96576msh8e92c08a14f685ap15d203jsn28e8b992e084",
+	"X-RapidAPI-Key": "",
 	"X-RapidAPI-Host": "planets-info-by-newbapi.p.rapidapi.com"
 }
 
